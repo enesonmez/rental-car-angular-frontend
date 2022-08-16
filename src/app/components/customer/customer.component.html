@@ -1,0 +1,20 @@
+<div class="ps-4">
+  <h4 class="bg-light ps-2 py-2">Müşteriler</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Kullanıcı Id</th>
+        <th scope="col">Şirket Adı</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers" class="text-capitalize">
+        <td>{{customer.customerId}}</td>
+        <td>{{customer.userId}}</td>
+        <td>{{customer.companyName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

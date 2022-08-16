@@ -1,0 +1,12 @@
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success text-center fw-bold">
+    Markalar
+  </li>
+  <li
+    *ngFor="let brand of brands"
+    role="button"
+    class="list-group-item list-group-item-action text-capitalize"
+  >
+    {{ brand.brandName }}
+  </li>
+</ul>

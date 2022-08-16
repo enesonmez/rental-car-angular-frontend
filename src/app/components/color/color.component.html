@@ -1,0 +1,10 @@
+<ul class="list-group py-4">
+  <li class="list-group-item list-group-item-warning text-center fw-bold">Renkler</li>
+  <li
+    *ngFor="let color of colors"
+    role="button"
+    class="list-group-item list-group-item-action text-capitalize"
+  >
+    {{ color.colorName }}
+  </li>
+</ul>
